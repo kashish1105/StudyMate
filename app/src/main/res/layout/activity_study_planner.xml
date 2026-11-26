@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Study Planner"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/etPlanSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject (e.g. Android Studio)"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etPlanTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Topic / Task to study"
+        android:inputType="textCapSentences"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etPlanTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Study Time (e.g. 07:00 PM - 08:30 PM)"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnAddSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to Timetable"
+        android:layout_marginBottom="14dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStudyPlanner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
